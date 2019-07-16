@@ -1,0 +1,24 @@
+{
+  "name": "homebridge-izone3-aircon-platform",
+  "version": "1.0.0",
+  "description": "This is a platform for the iZone arirconditioner.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "homebridge",
+    "homebridge-plugin",
+    "platform",
+    "plugin"
+  ],
+  "author": "Justin Boyd",
+  "license": "ISC",
+  "dependencies": {
+    "izoneapi": "file:../iZoneApi"
+  },
+  "engines": {
+    "node": ">=6.12.2",
+    "homebridge": ">=0.4.33"
+  }
+}

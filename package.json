@@ -19,7 +19,7 @@
   "author": "Justin Boyd",
   "license": "ISC",
   "dependencies": {
-    "izoneapi": "file:../iZoneApi"
+    "izoneapi": "bluephlame/iZoneApi"
   },
   "engines": {
     "node": ">=6.12.2",

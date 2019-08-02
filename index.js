@@ -31,7 +31,7 @@ function iZone3Platform(log, config, api) {
     this.log = log;
     this.config = config;
     this.accessories = [];
-    this.client = new izone_api(config.url);
+    this.client = new izone_api();
 
     if (api) {
         // Save the API object as plugin needs to register new accessory via this object
@@ -43,6 +43,7 @@ function iZone3Platform(log, config, api) {
           platform.log("DidFinishLaunching");
           var has_airconditioner = false;
           try{  
+            await this.client.getIP();
             var zones = await platform.client.getActiveZones();
 
             for (const assesory of this.accessories) {
